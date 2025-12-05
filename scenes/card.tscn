@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=4 uid="uid://cvvv2p2a3qslt"]
+
+[ext_resource type="Texture2D" uid="uid://cx57mu26l3owq" path="res://assets/Untitled.png" id="1_6u4wf"]
+[ext_resource type="Script" uid="uid://da7yf1cnsihjd" path="res://scenes/card.gd" id="2_ktuci"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d81rb"]
+texture = ExtResource("1_6u4wf")
+texture_region_size = Vector2i(13, 14)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_6u4wf"]
+tile_size = Vector2i(13, 14)
+sources/1 = SubResource("TileSetAtlasSource_d81rb")
+
+[node name="Card" type="Node2D"]
+script = ExtResource("2_ktuci")
+
+[node name="Symbols" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABAAEAAQADAAAAAAAAAAAAAQADAAAAAAAAAAEAAQADAAAAAAACAAAAAQAAAAAAAAABAAAAAQADAAAAAAACAAEAAQAAAAAAAAACAAIAAQAAAAAAAAABAAIAAQAAAAAAAAAAAAIAAQAAAAAAAAD//wIAAQAAAAAAAAD//wEAAQADAAAAAAD+/wAAAQADAAAAAAD//wAAAQADAAAAAAD+/wEAAQADAAAAAAD+/wIAAQAAAAAAAAD9/wIAAQAAAAAAAAD9/wEAAQAAAAAAAAD9/wAAAQAAAAAAAAD9////AQAAAAAAAAD+////AQADAAAAAAD/////AQADAAAAAAD///7/AQADAAAAAAD9//7/AQAAAAAAAAD+//7/AQADAAAAAAAAAP7/AQADAAAAAAAAAP//AQADAAAAAAABAP//AQADAAAAAAABAP7/AQADAAAAAAACAP7/AQAAAAAAAAACAP//AQAAAAAAAAD9//3/AQAAAAAAAAD+//3/AQAAAAAAAAAAAP3/AQAAAAAAAAD///3/AQAAAAAAAAABAP3/AQAAAAAAAAACAP3/AQAAAAAAAAA=")
+tile_set = SubResource("TileSet_6u4wf")
